@@ -31,30 +31,73 @@
                 </Grid.ColumnDefinitions>
                 <!-- Row 0 -->
                 <Grid Grid.Row="0" Grid.Column="0" Background="{StaticResource OddTile}">
-                    
+                    <Canvas>
+                        <Canvas Style="{StaticResource OppositeCanvas}">
+                            <Path Style="{StaticResource Rook}" Canvas.Left="-43.4" Canvas.Top="-44.4"/>
+                        </Canvas>
+                    </Canvas>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="1" Background="{StaticResource EvenTile}">
                     <Canvas>
-                        
+                        <Canvas Style="{StaticResource OppositeCanvas}">
+                            <Path Style="{StaticResource Knight}" Canvas.Left="-26.867" Canvas.Top="-43.467" HorizontalAlignment="Center" VerticalAlignment="Top" Height="80" Stretch="Fill" Width="44"/>
+                        </Canvas>
                     </Canvas>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="2" Background="{StaticResource OddTile}">
-                    
+                    <Canvas>
+                        <Canvas>
+                            <Canvas Style="{StaticResource OppositeCanvas}">
+                                <Path Style="{StaticResource Bishop}" Canvas.Left="-29.267" Canvas.Top="-42.667" HorizontalAlignment="Left" VerticalAlignment="Top" Height="79" Stretch="Fill" Width="45"/>
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="3" Background="{StaticResource EvenTile}">
-                   
-                    
+                    <Canvas>
+                        <Canvas>
+                            <Canvas Style="{StaticResource OppositeCanvas}">
+                                <Path Style="{StaticResource Queen}" Canvas.Left="-26.067" Canvas.Top="-43.867" HorizontalAlignment="Center" VerticalAlignment="Top" Height="80" Stretch="Fill" Width="43"/>
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="4" Background="{StaticResource OddTile}">
-                
+                    <Canvas Margin="5,0,0,10">
+                        <Canvas>
+                            <Canvas Style="{StaticResource OppositeCanvas}">
+                                <Path Style="{StaticResource King}" Canvas.Left="-22.867" Canvas.Top="-44.267" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Stretch="Fill" Width="41"/>
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="5" Background="{StaticResource EvenTile}">
-                   
+                    <Canvas>
+                        <Canvas>
+                            <Canvas Style="{StaticResource OppositeCanvas}">
+                                <Path Style="{StaticResource Bishop}" Canvas.Left="-27.667" Canvas.Top="-45.867" HorizontalAlignment="Left" VerticalAlignment="Top" Height="85" Stretch="Fill" Width="45"/>
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="6" Background="{StaticResource OddTile}">
-                  
+                    <Canvas>
+                        <Canvas>
+                            <Canvas Style="{StaticResource OppositeCanvas}">
+                                <Path Style="{StaticResource Knight}" Canvas.Left="-27.667" Canvas.Top="-45.867" HorizontalAlignment="Left" VerticalAlignment="Top" Height="85" Stretch="Fill" Width="45"/>
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
                 </Grid>
-                <Grid Grid.Row="0" Grid.Column="7" Background="{StaticResource EvenTile}"></Grid>
+                <Grid Grid.Row="0" Grid.Column="7" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Canvas>
+                            <Canvas Style="{StaticResource OppositeCanvas}">
+                                <Path Style="{StaticResource Rook}" Canvas.Left="-27.667" Canvas.Top="-45.867" HorizontalAlignment="Left" VerticalAlignment="Top" Height="85" Stretch="Fill" Width="45"/>
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
+                </Grid>
                 <!-- Row 1 -->
                 <Grid Grid.Row="1" Grid.Column="0" Background="{StaticResource EvenTile}">
                     <Canvas Style="{StaticResource OppositeCanvas}">
@@ -174,14 +217,46 @@
                     </Canvas>
                 </Grid>
                 <!-- Row 7 -->
-                <Grid Grid.Row="7" Grid.Column="0" Background="{StaticResource EvenTile}"></Grid>
-                <Grid Grid.Row="7" Grid.Column="1" Background="{StaticResource OddTile}"></Grid>
-                <Grid Grid.Row="7" Grid.Column="2" Background="{StaticResource EvenTile}"></Grid>
-                <Grid Grid.Row="7" Grid.Column="3" Background="{StaticResource OddTile}"></Grid>
-                <Grid Grid.Row="7" Grid.Column="4" Background="{StaticResource EvenTile}"></Grid>
-                <Grid Grid.Row="7" Grid.Column="5" Background="{StaticResource OddTile}"></Grid>
-                <Grid Grid.Row="7" Grid.Column="6" Background="{StaticResource EvenTile}"></Grid>
-                <Grid Grid.Row="7" Grid.Column="7" Background="{StaticResource OddTile}"></Grid>
+                <Grid Grid.Row="7" Grid.Column="0" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Rook}"/>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="1" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Knight}"/>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="2" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Bishop}"/>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="3" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Queen}"/>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="4" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource King}"/>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="5" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Bishop}"/>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="6" Background="{StaticResource EvenTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Knight}"/>
+                    </Canvas>
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="7" Background="{StaticResource OddTile}">
+                    <Canvas>
+                        <Path Style="{StaticResource Rook}"/>
+                    </Canvas>
+                </Grid>
             </Grid>
         </Border>
     </Grid>
